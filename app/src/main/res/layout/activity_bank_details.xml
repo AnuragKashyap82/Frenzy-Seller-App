@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5CD9D0D0"
+    tools:context=".Activities.BankDetailsActivity">
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_black"
+        android:backgroundTint="@color/colorPrimary"
+        android:padding="16dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        android:layout_below="@id/backBtn"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Give your bank details"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_below="@id/tv"
+                android:textSize="14dp"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:text="I have bank account on my registered business NameI have bank account on my registered business NameI have bank account on my registered business Name"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/holderNameTil"
+                android:layout_width="match_parent"
+                android:layout_below="@id/tv1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:hint="Account Holder Name"
+                app:boxBackgroundColor="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <EditText
+                    android:id="@+id/holderNameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/black"
+                    android:paddingRight="26dp"
+                    android:paddingLeft="26dp"
+                    android:inputType="textPersonName"
+                    android:drawablePadding="10dp"
+                    android:textColorHint="@color/gray01"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/accountNoTil"
+                android:layout_width="match_parent"
+                android:layout_below="@id/holderNameTil"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                app:boxBackgroundColor="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <EditText
+                    android:id="@+id/accountNoEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/black"
+                    android:paddingRight="26dp"
+                    android:paddingLeft="26dp"
+                    android:hint="Enter bank account Number"
+                    android:inputType="numberSigned"
+                    android:drawablePadding="10dp"
+                    android:textColorHint="@color/gray01"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/continueBtn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/accountNoTil"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_circle_01"
+                android:text="Continue"
+                android:visibility="visible"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:theme="@style/Widget.AppCompat.ProgressBar"
+                android:padding="5dp"
+                android:background="@drawable/shape_circle_01"
+                android:visibility="gone"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

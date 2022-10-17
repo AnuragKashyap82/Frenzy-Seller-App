@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditProductThirdActivity">
+
+    <RelativeLayout
+        android:id="@+id/topRl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back_black"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Update Product"
+            android:layout_toEndOf="@id/backBtn"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topRl"
+        android:layout_above="@id/bottomRl">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fontViewTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Font View"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/productIv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shape_rect_01"
+                android:layout_below="@id/fontViewTv"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/gray01"/>
+
+            <Button
+                android:id="@+id/uploadImageBtn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/productIv"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_circle_01"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Upload Photo"
+                android:textAllCaps="false"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uploadImageBtn"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Follow Image Guidelines reduce the Quality Check Failure"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:text="Image Guidelines"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resolutionDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use clear color image with minimum resolution of 500 x 500px"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/Tv2"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="-8dp"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/sampleImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check the sample to ensure provided the correct image View"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/resolutionDesc"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/backViewTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Back View"
+                android:textColor="@color/black"
+                android:layout_below="@id/sampleImage"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/backProductIv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shape_rect_01"
+                android:layout_below="@id/backViewTv"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/gray01"/>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/backProductIv"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Follow Image Guidelines reduce the Quality Check Failure"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv1"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:text="Image Guidelines"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resolutionDesc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use clear color image with minimum resolution of 500 x 500px"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/Tv3"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="-8dp"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/sampleImage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check the sample to ensure provided the correct image View"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/resolutionDesc1"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/uploadBackViewBtn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/sampleImage1"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_circle_01"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Upload Photo"
+                android:textAllCaps="false"
+                android:layout_marginBottom="8dp"/>
+
+
+
+            <TextView
+                android:id="@+id/sideViewTv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Side View"
+                android:textColor="@color/black"
+                android:layout_below="@id/uploadBackViewBtn"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/side1ProductIv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shape_rect_01"
+                android:layout_below="@id/sideViewTv1"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/gray01"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/side1ProductIv"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Follow Image Guidelines reduce the Quality Check Failure"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:text="Image Guidelines"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resolutionDesc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use clear color image with minimum resolution of 500 x 500px"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/Tv4"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="-8dp"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/sampleImage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check the sample to ensure provided the correct image View"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/resolutionDesc2"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/uploadSideView1Btn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/sampleImage3"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_circle_01"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Upload Photo"
+                android:textAllCaps="false"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/sideViewTv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Side View"
+                android:textColor="@color/black"
+                android:layout_below="@id/uploadSideView1Btn"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/side2ProductIv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shape_rect_01"
+                android:layout_below="@id/sideViewTv2"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/gray01"/>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/side2ProductIv"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Follow Image Guidelines reduce the Quality Check Failure"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv4"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:text="Image Guidelines"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resolutionDesc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use clear color image with minimum resolution of 500 x 500px"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/Tv5"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="-8dp"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/sampleImage4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check the sample to ensure provided the correct image View"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/resolutionDesc3"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/uploadSideView2Btn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/sampleImage4"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_circle_01"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Upload Photo"
+                android:textAllCaps="false"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/moreTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="More Photos"
+                android:textColor="@color/black"
+                android:layout_below="@id/uploadSideView2Btn"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/moreIv"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shape_rect_01"
+                android:layout_below="@id/moreTv"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/gray01"/>
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moreIv"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Follow Image Guidelines reduce the Quality Check Failure"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv5"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:text="Image Guidelines"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resolutionDesc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use clear color image with minimum resolution of 500 x 500px"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/Tv6"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="-8dp"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/sampleImage5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check the sample to ensure provided the correct image View"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/resolutionDesc4"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/uploadMore1Btn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/sampleImage5"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_circle_01"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Upload Photo"
+                android:textAllCaps="false"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/moreTv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="More Photos"
+                android:textColor="@color/black"
+                android:layout_below="@id/uploadMore1Btn"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/moreIv2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shape_rect_01"
+                android:layout_below="@id/moreTv2"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/gray01"/>
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moreIv2"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Follow Image Guidelines reduce the Quality Check Failure"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv6"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:text="Image Guidelines"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resolutionDesc6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use clear color image with minimum resolution of 500 x 500px"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/Tv7"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="-8dp"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/sampleImage6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check the sample to ensure provided the correct image View"
+                android:textColor="@color/gray02"
+                android:textStyle="bold"
+                android:layout_below="@id/resolutionDesc6"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/uploadMore2Btn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_below="@id/sampleImage6"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shape_circle_01"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="Upload Photo"
+                android:textAllCaps="false"
+                android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottomRl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:elevation="6dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/sendToQcBtn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_circle_01"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="1dp"
+            android:textStyle="bold"
+            android:text="Send To QC"
+            android:textAllCaps="false"
+            android:layout_marginBottom="8dp"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:theme="@style/Widget.AppCompat.ProgressBar"
+        android:padding="5dp"
+        android:background="@drawable/shape_circle_01"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
